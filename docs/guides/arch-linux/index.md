@@ -25,7 +25,7 @@ ISO without the typing. Boot the ISO and join the network as the next
 two chapters describe, then fetch the script and run it.
 
 ```bash
-curl -fsSLO https://nafud.github.io/kiln/assets/arch-linux/install
+curl -fsSLO https://nafud.github.io/Kiln/assets/arch-linux/install
 bash install
 ```
 
@@ -61,7 +61,7 @@ it leaves manual is the Snapshots chapter's bracket test, installing
 a package and watching the pre and post snapshots appear.
 
 ```bash
-curl -fsSLO https://nafud.github.io/kiln/assets/arch-linux/install
+curl -fsSLO https://nafud.github.io/Kiln/assets/arch-linux/install
 sudo bash install verify
 ```
 
@@ -1257,12 +1257,12 @@ land.
 ```bash
 cd "$(mktemp -d)"
 for u in wpa_supplicant mullvad-daemon mullvad-early-boot-blocking grub-btrfsd udisks2; do
-    curl -fsSL -o "$u.conf" "https://nafud.github.io/kiln/assets/hardening/systemd/system/$u.service.d/hardening.conf"
+    curl -fsSL -o "$u.conf" "https://nafud.github.io/Kiln/assets/hardening/systemd/system/$u.service.d/hardening.conf"
     sudo install -D -m 644 "$u.conf" "/etc/systemd/system/$u.service.d/hardening.conf"
 done
-curl -fsSL -o mullvad-net-cls.service https://nafud.github.io/kiln/assets/hardening/systemd/system/mullvad-net-cls.service
+curl -fsSL -o mullvad-net-cls.service https://nafud.github.io/Kiln/assets/hardening/systemd/system/mullvad-net-cls.service
 sudo install -m 644 mullvad-net-cls.service /etc/systemd/system/mullvad-net-cls.service
-sudo curl -fsSL -o /usr/local/sbin/sandbox-check https://nafud.github.io/kiln/assets/sandbox-check
+sudo curl -fsSL -o /usr/local/sbin/sandbox-check https://nafud.github.io/Kiln/assets/sandbox-check
 sudo chmod 755 /usr/local/sbin/sandbox-check
 sudo systemctl daemon-reload
 ```

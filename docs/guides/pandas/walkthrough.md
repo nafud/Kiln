@@ -17,7 +17,7 @@ from sklearn.model_selection import cross_val_score, train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
-df = pd.read_csv("https://nafud.github.io/kiln/assets/pandas/employees.csv")
+df = pd.read_csv("https://nafud.github.io/Kiln/assets/pandas/employees.csv")
 df.columns = df.columns.str.strip().str.lower().str.replace(r"[\s-]+", "_", regex=True)
 df = df.drop_duplicates().reset_index(drop=True)
 df["monthly_salary"] = pd.to_numeric(df["monthly_salary"], errors="coerce")
@@ -57,7 +57,7 @@ The outputs below come from pandas 3.0.5 and scikit-learn 1.9.1. On pandas 2.x t
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv("https://nafud.github.io/kiln/assets/pandas/employees.csv")
+df = pd.read_csv("https://nafud.github.io/Kiln/assets/pandas/employees.csv")
 df.shape
 ```
 

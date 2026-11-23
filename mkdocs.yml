@@ -1,8 +1,8 @@
 site_name: Kiln
 site_description: Reverse Engineering Knowledge Base
-site_url: https://nafud.github.io/kiln/
-repo_url: https://github.com/nafud/kiln
-repo_name: nafud/kiln
+site_url: https://nafud.github.io/Kiln/
+repo_url: https://github.com/nafud/Kiln
+repo_name: nafud/Kiln
 
 # Escalate link problems to warnings so `mkdocs build --strict` (run in CI
 # on secondary) fails on them. anchors covers the #fragment of cross-page

@@ -2,11 +2,11 @@
 #
 # install — the Arch Linux guide, run end to end from the live ISO.
 #
-#   curl -fsSLO https://nafud.github.io/kiln/assets/arch-linux/install
+#   curl -fsSLO https://nafud.github.io/Kiln/assets/arch-linux/install
 #   bash install              the install: seven answers, then no questions
 #   bash install verify       on the installed system: every must-hold, as rows
 #
-# The guide (https://nafud.github.io/kiln/guides/arch-linux/) is the
+# The guide (https://nafud.github.io/Kiln/guides/arch-linux/) is the
 # specification and this script is its execution, chapter by chapter:
 # the disk layout (GPT, an ESP, an ext4 /boot, a LUKS2 container with
 # five btrfs subvolumes), the base system in one pacstrap, the system
@@ -42,7 +42,7 @@ on_error() {
 }
 trap 'on_error "$LINENO" "$BASH_COMMAND"' ERR
 
-ASSETS="${KILN_ASSETS:-https://nafud.github.io/kiln/assets}"
+ASSETS="${KILN_ASSETS:-https://nafud.github.io/Kiln/assets}"
 MNT=/mnt
 
 log()  { printf '\033[1m[install]\033[0m %s\n' "$*"; }
